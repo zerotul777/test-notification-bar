@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification Bar</title>
+    <title>Notification Bar + Popup Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,13 +11,25 @@
     <script src="https://kit.fontawesome.com/3fe2c88cb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="buttons">
-        <button onclick="showToast(successMsg)">Success</button>
-        <button onclick="showToast(errorMsg)">Error</button>
-        <button onclick="showToast(invalidMsg)">Invalid</button>
+
+    <div class="container">
+        <div class="buttons">
+            <button class="toast-btn" onclick="showToast(successMsg)">Success</button>
+            <button class="toast-btn" onclick="showToast(errorMsg)">Error</button>
+            <button class="toast-btn" onclick="showToast(invalidMsg)">Invalid</button>
+            <button class="toast-btn" onclick="openPopup()" type="submit" class="btn">Submit Popup</button>
+        </div>
+    </div>
+
+    <div class="popup">
+        <img src="./404-tick.png">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button id="ok" type="button" onclick="closePopup()">OK</button>
     </div>
 
     <div id="toastBox"></div>
-<script src="./main.js"></script>
+    
+    <script src="./main.js"></script>
 </body>
 </html>

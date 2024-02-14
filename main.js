@@ -19,3 +19,13 @@ function showToast(msg) {
         toast.remove()
     },6000)
 }
+
+let popup = document.querySelector('.popup')
+
+function openPopup() {
+    popup.classList.add('open-popup')
+}
+
+function closePopup() {
+    popup.classList.remove('open-popup')
+}
