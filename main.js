@@ -1,3 +1,4 @@
+// notifications
 let toastBox = document.getElementById('toastBox')
 let successMsg = '<i class="fa-solid fa-circle-check"></i>Successfully submitted'
 let errorMsg = '<i class="fa-solid fa-circle-xmark"></i>Please fix the error!'
@@ -20,6 +21,7 @@ function showToast(msg) {
     },6000)
 }
 
+// popup
 let popup = document.querySelector('.popup')
 
 function openPopup() {
@@ -30,6 +32,7 @@ function closePopup() {
     popup.classList.remove('open-popup')
 }
 
+// password
 let eyeicon = document.getElementById('eyeicon')
 let password = document.getElementById('password')
 

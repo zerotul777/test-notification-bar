@@ -106,6 +106,7 @@
 	background: orange;
 }
 
+/* Popup */
 .popup {
 	width: 400px;
 	background: #fff;
@@ -153,6 +154,7 @@
 	cursor: pointer;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+/* /Popup */
 
 .input-box {
 	background: #fff;
