@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification Bar + Popup Design</title>
+    <title>Notification Bar + Popup Design + Password Toggle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,10 +19,14 @@
             <button class="toast-btn" onclick="showToast(invalidMsg)">Invalid</button>
             <button class="toast-btn" onclick="openPopup()" type="submit" class="btn">Submit Popup</button>
         </div>
+        <div class="input-box">
+            <input type="password" placeholder="password" id="password">
+            <img src="./images/eye-close.png" id="eyeicon">
+        </div>
     </div>
 
     <div class="popup">
-        <img src="./404-tick.png">
+        <img src="./images/404-tick.png">
         <h2>Thank You!</h2>
         <p>Your details has been successfully submitted. Thanks!</p>
         <button id="ok" type="button" onclick="closePopup()">OK</button>
